@@ -21,7 +21,7 @@ The JWT implementation will provide a secure and efficient way to authenticate u
 
 `#python app.py`
 
-# Components
+# Components and instruction
 
 `/register` > Create a user > `#curl -i -H "Content-Type: application/json" -X POST -d '{"username":"test", "password":"test"}' http://localhost:5001/register
 `
