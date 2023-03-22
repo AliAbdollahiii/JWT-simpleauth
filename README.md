@@ -23,8 +23,11 @@ The JWT implementation will provide a secure and efficient way to authenticate u
 
 # Components
 
-`/register` > Create a user
+`/register` > Create a user > `#curl -i -H "Content-Type: application/json" -X POST -d '{"username":"test", "password":"test"}' http://localhost:5001/register
+`
 
-`/login` > login to the system to get a JWT 
+`/login` > Login to the system to get a JWT > `#curl -X POST http://localhost:5001/login -H 'Content-Type: application/json' -d '{"username": "test", "password": "test"}'`
 
-`/protected` > Use your JWT token to access to the protected resource! 
+`/protected` > Use your JWT token to access to the protected resource! > `#curl -X GET http://127.0.0.1:5001/protected  -H "Authorization: Bearer <Access Token>"`
+
+
