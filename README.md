@@ -11,8 +11,20 @@ The user database will store user account information, including usernames, emai
 The JWT implementation will provide a secure and efficient way to authenticate users and manage user sessions. When a user logs in, the Flask application will generate a JWT containing the user's identity and other information, and send it to the client. The client will then include the JWT in all subsequent requests to the Flask application, allowing the application to verify the user's identity and grant access to protected resources.
 
 # Setup
-`#pip install flask PyJWT`
+`#pip install flask`
+
+`#pip install flask_jwt_extended`
+
+`#pip install protected`
 
 `#pip install flask_sqlalchemy`
 
 `#python app.py`
+
+# Components
+
+`/register` > Create a user
+
+`/login` > login to the system to get a JWT 
+
+`/protected` > Use your JWT token to access to the protected resource! 
